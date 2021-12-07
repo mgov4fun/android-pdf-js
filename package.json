@@ -1,0 +1,24 @@
+{
+  "name": "cordova-plugin-pdf-js",
+  "version": "1.0.0",
+  "description": "Wrapping android-pdf-js as cordova plugin",
+  "cordova": {
+    "id": "cordova-plugin-pdf-js",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": {
+    "cordovaDependencies": {
+      "<1.0.0": {
+        "cordova": ">=9.0.0",
+        "cordova-android": ">=7.0.0"
+      }
+    }
+  }
+
+}
