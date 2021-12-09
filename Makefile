@@ -40,6 +40,11 @@ content:
 	rm "pdfjs-$(PDFJS_VERSION)-dist.zip"
 
 	cat patches/pdfjs-pinch-gestures-larsneo.js >> content.build/web/viewer.js
+# Add customToolbar.js	
+	cp patches/customToolbar.js content.build/web
+	sed -i.bak "s#</head>#<script src=\"../../js/jquery.min.js\"></script>\n<script src=\"customToolbar.js\"></script>\n</head>#" "content.build/web/viewer.html"
+	rm content.build/web/*.bak
+
 	mv content.build content
 
 clean:
