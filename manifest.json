@@ -1,12 +1,13 @@
 {
   "manifest_version": 2,
   "name": "Android PDF.js",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "description": "Opens PDF files on Firefox for Android using PDF.js.",
 
   "applications": {
     "gecko": {
-      "id": "{7a4b4ee5-e5af-4a20-b179-d42ec510f3e8}"
+      "id": "{7a4b4ee5-e5af-4a20-b179-d42ec510f3e8}",
+      "strict_min_version": "70.0"
     }
   },
 
